@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshan Singh - Software Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            font-weight: 300;
+            color: #222;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            color: #888;
+            font-size: 0.95em;
+        }
+
+        .contact a {
+            color: #444;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section h2 {
+            font-size: 1.3em;
+            color: #222;
+            margin-bottom: 15px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .summary {
+            color: #555;
+            font-style: italic;
+            line-height: 1.7;
+        }
+
+        .job, .project, .education-item {
+            margin-bottom: 25px;
+        }
+
+        .job h3, .project h3 {
+            color: #222;
+            font-size: 1.1em;
+            margin-bottom: 3px;
+            font-weight: 500;
+        }
+
+        .job-meta {
+            color: #777;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .job ul, .project ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .job li, .project li {
+            margin-bottom: 6px;
+            color: #555;
+            font-size: 0.95em;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .job li::before, .project li::before {
+            content: '•';
+            color: #bbb;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-group h4 {
+            font-size: 1em;
+            color: #333;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .skill-group p {
+            color: #666;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #333;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 3px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .print-btn:hover {
+            background: #555;
+        }
+
+        @media print {
+            .print-btn {
+                display: none;
+            }
+            body {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 30px 15px;
+            }
+            .header h1 {
+                font-size: 2em;
+            }
+            .skills {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-btn" onclick="window.print()">Print PDF</button>
+    
+    <div class="header">
+        <h1>Roshan Singh</h1>
+        <p>Software Engineer</p>
+        <div class="contact">
+            <a href="mailto:roshan98831@gmail.com">roshan98831@gmail.com</a> | Gurgaon, India
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Summary</h2>
+        <p class="summary">Computer Science graduate with hands-on experience in software engineering, AI technologies, and sales. Proven track record in developing scalable applications, implementing machine learning solutions, and exceeding performance targets. Strong background in full-stack development, data engineering, and cloud technologies.</p>
+    </div>
+
+    <div class="section">
+        <h2>Experience</h2>
+        
+        <div class="job">
+            <h3>Sales Associate</h3>
+            <div class="job-meta">Globiva | Gurgaon, India | Jan 2025 – Present</div>
+            <ul>
+                <li>Sell American Express credit cards and insurance products through high-volume cold calling and lead generation</li>
+                <li>Build and maintain strong sales pipeline via networking, referrals, and consistent follow-ups</li>
+                <li>Consistently exceed monthly sales targets while ensuring compliance with company policies</li>
+                <li>Deliver clear, persuasive pitches tailored to customer needs, boosting conversion rates and client satisfaction</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>Software Engineer Intern</h3>
+            <div class="job-meta">Electronic Arts | Virtual | May 2025</div>
+            <ul>
+                <li>Proposed new feature for EA Sports College Football and wrote comprehensive Feature Proposal for stakeholders</li>
+                <li>Built class diagram and created header file in C++ with class definitions for each object</li>
+                <li>Patched bugfix and optimized EA Sports College Football codebase by implementing improved data structure</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>Teaching Assistant</h3>
+            <div class="job-meta">University of Calcutta | May 2024 – Dec 2024</div>
+            <ul>
+                <li>Mentored students in game theory algorithms and optimization techniques</li>
+                <li>Assisted in designing problem sets and evaluating solutions</li>
+                <li>Provided academic support and guidance to improve student understanding of complex algorithms</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Projects</h2>
+        
+        <div class="project">
+            <h3>Lexora AI</h3>
+            <ul>
+                <li>Developed AI-powered application using machine learning algorithms for natural language processing</li>
+                <li>Implemented advanced AI models for content generation and analysis</li>
+                <li>Integrated modern web technologies for seamless user experience</li>
+                <li>Deployed scalable solution with optimized performance and user interface</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>Code to Documentation Project</h3>
+            <ul>
+                <li>Built automated documentation generation system that converts code comments into comprehensive technical documentation</li>
+                <li>Implemented natural language processing techniques to analyze code structure and generate meaningful documentation</li>
+                <li>Created user-friendly interface for developers to easily generate and maintain project documentation</li>
+                <li>Utilized Python, JavaScript, and documentation frameworks for end-to-end solution</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>Bachelor of Technology in Computer Science</h3>
+            <div class="job-meta">University of Calcutta | Kolkata, India | Sept 2020 – Aug 2024</div>
+            <p>Relevant Coursework: Operating Systems, Software Methodology, Algorithms, Database Management, Artificial Intelligence, Internet Technology, Machine Learning, Computer Architecture</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+            <div class="skill-group">
+                <h4>Programming Languages</h4>
+                <p>Python, JavaScript, Golang, C++, C, SQL, PySpark, SAS</p>
+            </div>
+            <div class="skill-group">
+                <h4>Web Technologies</h4>
+                <p>Next.js, React, HTML, CSS, TailwindCSS, RESTful APIs</p>
+            </div>
+            <div class="skill-group">
+                <h4>Databases & Cloud</h4>
+                <p>PostgreSQL, Redis, Oracle, MongoDB, AWS (S3, Athena), Docker</p>
+            </div>
+            <div class="skill-group">
+                <h4>AI & Data Science</h4>
+                <p>Machine Learning, NLP, Pandas, NumPy, Scikit-learn, Databricks, Statistical Analysis</p>
+            </div>
+            <div class="skill-group">
+                <h4>Development Tools</h4>
+                <p>Git, Bitbucket, VS Code, Jupyter, Linux, Version Control, ETL Pipelines</p>
+            </div>
+            <div class="skill-group">
+                <h4>Other Skills</h4>
+                <p>Data Validation, Code Optimization, Technical Documentation, Agile Development, Cloud Migration</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Achievements</h2>
+        <div class="education-item">
+            <ul>
+                <li>Consistently exceeded sales targets at Globiva</li>
+                <li>Successfully completed software engineering internship at Electronic Arts</li>
+                <li>Developed multiple full-stack applications with modern technologies</li>
+                <li>Experience with cloud-based solutions and scalable architectures</li>
+                <li>Strong background in AI/ML implementation and data engineering</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
